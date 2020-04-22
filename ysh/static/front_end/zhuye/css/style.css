@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body,html{
+    width: auto;
+}
+/**********navi***********/
+.navi{
+    /*border:  1px red solid ;  !*test*!*/
+    height:60px;
+    width: auto;
+    background: #6C9ED2;
+    overflow: hidden;
+    display: flex;
+}
+.navi_search{
+    border:  2px transparent solid ;   /*test*/
+    border-radius: 40px;
+    height: 80%;
+    margin:0 10px;
+    position: relative;
+    top:5px;
+    width:40%;
+    background: #B5CEE8;
+}
+.navi_search:hover{
+    border:2px #F5F5F5 solid;
+}
+#search_button{
+    width:30px;
+    height: 30px;
+    float: right;
+    position: relative;
+    right: 20px;
+    top: 8px;
+
+}
+#search_button:hover{
+    width: 40px;
+    height: 40px;
+    top: 4px;
+}
+#txt{
+    outline: none;
+    background: none;
+    border: none;
+    height: 100%;
+    font-size: 20px;
+    width: 70%;
+    margin:0 0 0 5%;
+    overflow: hidden;
+    font-weight: lighter;
+}
+.navi_user{
+    /*border:  1px red solid ;  !*test*!*/
+    margin-left:200px;
+    width:12%;
+    height:80%;
+    position: relative;
+    top:6px;
+    font-size: 16px;
+}
+#idd{
+    font-size: 16px;
+    color: white;
+}
+.navi_user img{
+    height: 100%;
+}
+.navi_user span{
+    line-height: 80px;
+}
+.navi_ope{
+    /*border:  1px red solid ;  !*test*!*/
+    width: 240px;
+    height: 60px;
+    font-size: 0;
+}
+.navi_ope li{
+    width: 60px;
+    display: inline-block;
+    list-style: none;
+}
+.navi_ope li:hover{
+    background-color: coral;
+ }
+.navi_ope a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height:60px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn{
+    height: 40px;
+    width:100px;
+    border-radius: 10px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+    margin: 0 10px;
+    cursor: pointer;
+    background:#6B84D1;
+}
+.btn:hover{
+    background:coral;
+}
+
+/**********************************/
+
+
+.main_body{
+    /*border: 1px red solid; */
+    width: 50%;
+    height: 2000px;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+
+/*************commit****************/
+.commit_box{
+    height: 350px;
+    margin-bottom: 50px;
+}
+.commit_box .head{
+    background: #6B84D1;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 60px;
+    font-size: 23px;
+    padding: 0 0 0 20px;
+    border: 5px solid #6B84D1;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+p,span{
+    display: inline;
+    font-weight: lighter;
+}
+.head span {
+    font-size: 16px;
+
+}
+.text_box{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: #A9B8E4 1px solid;
+    border-radius: 0 0 10px 10px ;
+    height: 240px;
+    padding: 0;
+}
+.text_box  .inputt{
+    height:165px;
+    width:93%;
+    border: 0.1px darkgray solid;
+    position: relative;
+    left: 50%;
+    top:40%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    resize:none;
+}
+.text_box .inputt_tit{
+    width: 92%;
+    height: 40px;
+    position: relative;
+    left: 50%;
+    top:10px;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+.opt{
+    /*border:1px solid blue;!*tets*!*/
+    padding: 13px 0 5px 0;
+    height:40px;
+    display: flex;
+    justify-content: space-around;
+    margin-top:-8px;
+    border: 1px solid #E8E8E8;
+    border-top: 0;
+}
+.opt img{
+    width: 30px;
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+}
+#emoji_box{
+
+}
+.button{
+    display: block;
+    height: 40px;
+    width:100px ;
+    background:#6C9ED2;
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.button:hover{
+    background: coral;
+}
+#launch_box{
+    margin-left:280px ;
+}
+#label_choic{
+
+}
+li{
+    list-style: none;
+}
+/****************************/
+
+/*************帖子************/
+.item{
+    border:2px solid #E2E2E2;/*tets*/
+    height:300px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.item .head{
+    border-bottom:2px #E2E2E2 solid;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    font-weight:bolder;
+    font-size: 35px;
+}
+.user_a_detail{
+    height:240px ;
+    width: 100%;
+    display:flex;
+    font-size: 0;
+}
+.user{
+    width:20%;
+    overflow: hidden;
+}
+.detail{
+    border-left: 2px #E2E2E2 solid;
+    width: 80%;
+}
+.text{
+    border-bottom: #E2E2E2 2px solid;
+    height: 80%;
+}
+
+.item .user img{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin:20px 0 10px;
+}
+
+.user{
+    /*color: white;*/
+    font-size: 16px;
+}
+.iddd{
+    margin: 0 10%;
+}
+.user .foucus_burtton{
+    display: block;
+    margin: 15px;
+    height: 30px;
+    width:auto;
+    line-height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background: #6C9ED2;
+}
+.user .foucus_burtton:hover{
+    background-color: coral;
+}
+.opt1{
+    height:20%;
+    display: flex;
+    transform: translatey(-2px);
+}
+.opt1 img{
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+    height: 80%;
+}
+.opt1_left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 0 5%;
+}
+.opt1_right{
+    /*border:1px solid red;!*tets*!*/
+    /*margin-left: 35%;*/
+    margin-right: 10px;
+    width: 80%;
+    overflow: hidden;
+}
+.labell{
+    /*border:1px solid red;!*tets*!*/
+    display: block;
+    float: right;
+    position: relative;
+    top: 50%;
+    margin:0 10px ;
+    transform: translatey(-50%);
+    width: 60px;
+    height: 70%;
+    line-height: 33px;
+    text-align: center;
+    background: #6C9ED2;
+    border-radius: 10px;
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+}
+.detail .text{
+    overflow: hidden;
+    display: flex;
+}
+.detail .text_left
+{   width: 75%;
+    margin:10px;
+    height: 90%;
+    overflow: hidden;
+    font-size: 15px;
+}
+.detail .read_buyyon{
+    margin-top:150px;
+    width:20%;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    line-height:30px;
+    border-radius: 10px;
+    background: #6C9ED2;
+}
+.detail .read_buyyon:hover{
+    background-color: coral;
+}
+
+/*********************************/
+/*******切换主题**************/
+.zhuti{
+    float: left;
+    width: 10px;
+    height:200px;
+    position: relative;
+    top:200px;
+    background-color: #6C9ED2;
+    border-radius: 0 5px 5px 0;
+
+}
+.zhuti:hover{
+    width: 30px;
+}
+.choibox{
+    display: none;
+    position: absolute;
+    transform: translate(-200px,5px);
+    /*position: relative;*/
+    /*right: -80px;*/
+    height:40px;
+    /*width: 200px;*/
+    /*background: red;*/
+}
+.dropdown{
+    height: 90px;
+    width:100px ;
+}
+.dropdown:hover .choibox{
+    display: flex;
+
+}
+.choibox input{
+    border-style: none;
+    outline: none;
+
+}

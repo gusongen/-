@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邮生活</title>
+    <link rel="stylesheet" href="../static/front_end/zhuye/css/style.css" type="text/css">
+</head>
+<body>
+<div class="navi">
+    <div class="navi_user">
+        <img src="../static/front_end/zhuye/image/user_ico.jpeg" alt="user-icon">
+        <p id="show_id"><span id="idd">ID:</span>
+        <p id="realname"></p></p>
+    </div>
+    <div class="navi_search">
+        <input type="text" value="请输入关键字..." style="color: #F5F5F5" id="txt">
+        <a href="#" onclick="submit()">
+            <img src="../static/front_end/zhuye/image/search.png" id="search_button" alt="search button">
+        </a>
+    </div>
+    <div class="btn" id="dengru" onclick="window.open('{% url "main:login" %}','_self')">登入</div>
+    <div class="btn" id="zhuce" onclick="window.open('{% url "main:reg" %}','_self')">注册</div>
+    <div class="navi_ope">
+        <ul>
+            <li><a href="">点赞</a></li>
+            <li><a href="">评论</a></li>
+            <li><a href="">转发</a></li>
+            <li><a href="{% url 'main:classify' %}">分类</a></li>
+        </ul>
+
+    </div>
+</div>
+<div class="zhuti">
+    <!--        切换主题颜色,待完善-->
+</div>
+<div class="main_body">
+    <div class="commit_box">
+        <div class="head">
+            <p>今天想要分享点什么呢?</p><span> what would you like to share today?</span>
+        </div>
+        <div class="text_box">
+            <input class="inputt_tit" type="text">
+            <textarea class="inputt"></textarea>
+        </div>
+        <div class="opt">
+            <a id="emoji_box" href="#"><img src="../static/front_end/zhuye/image/emoji.png" alt="表情"></a>
+            <a id="photo_box" href="#"><img src="../static/front_end/zhuye/image/photo.png" alt="照片"></a>
+            <div class="dropdown"><a id="label_choic" class="button" href="">标签</a>
+                <ul class="choibox">
+                    <li><input type="button" onclick="choingthis(this)" class="button" value="拼车"></li>
+                    <li><input type="button" onclick="choingthis(this)" class="button" value="组队"></li>
+                    <li><input type="button" onclick="choingthis(this)" class="button" value="失物"></li>
+                    <li><input type="button" onclick="choingthis(this)" class="button" value="日常"></li>
+                    <li><input type="button" onclick="choingthis(this)" class="button" value="学识"></li>
+                    <li><input type="button" onclick="choingthis(this)" class="button" value="交友"></li>
+                    <li><input type="button" onclick="choingthis(this)" class="button" value="其他"></li>
+                </ul>
+            </div>
+            <a id="launch_box" class="button" onclick="get_a_tiezi()">发送</a>
+
+        </div>
+    </div>
+    <div id="item_container">
+        <ul>
+            <!--贴子容器-->
+            <!--        每条帖子的模板*********-->
+            <!--        模板*****************-->
+        </ul>
+    </div>
+</div>
+{% load static %}
+<script src="{% static "node_modules\jquery\dist\jquery.js" %}"></script>
+<script type="text/javascript" src="../static/front_end/tool/iscroll.js" rel="script"></script>
+<script type="text/javascript" src="../static/front_end/tool/pullToRefresh.js" rel="script"></script>
+<script type="text/javascript" src="../static/front_end/zhuye/js/js.js" rel="script"></script>
+
+</body>
+</html>

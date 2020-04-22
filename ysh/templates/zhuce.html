@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>邮生活</title>
+    <link rel="stylesheet" href="../static/front_end/zhuce/css/style.css" type="text/css">
+
+</head>
+<body>
+    <div class="navi">
+       <div id="back_zhuye" class="button" onclick="window.open('{% url 'main:main' %}','_self')">
+           <img src="../static/front_end/zhuce/image/arrow.png" alt="箭头">
+           <div>主页</div>
+       </div>
+
+        <div id="fenqu" class="button">
+            分区专栏
+        </div>
+        <div id="search" class="button">
+            <img src="../static/front_end/zhuce/image/search.png" alt="">
+        </div>
+    </div>
+    <div class="center">
+        <div class="main">
+            <div class="head">
+                <img src="../static/front_end/zhuce/image/u7.png">
+            </div>
+
+            <div class="center_box">
+                <p>注册<span>欢迎你的到来~</span></p>
+                <input class="ipubox" id="id" >
+                <input class="ipubox" id="name" >
+                <input class="ipubox" id="pwd" >
+                <input class="ipubox" id="tele" >
+                <input class="ipubox" id="qq" >
+                 <div id="regis" onclick="hhh();">注册</div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="../static/front_end/zhuce/js/js.js"></script>
+    <script src="{% static 'node_modules/jquery/dist/jquery.js' %}"></script>
+</body>
+</html>
