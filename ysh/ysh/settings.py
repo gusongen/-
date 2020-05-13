@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main',
+    'main', "remarksys"
 ]
 
 MIDDLEWARE = [
@@ -121,6 +121,11 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,"static"),
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
 ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "static/upload")
+
+OK_msg = {"status": 200, "msg": "OK"}
+error_msg = {"status": 400, "msg": "error"}

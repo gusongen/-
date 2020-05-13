@@ -1,0 +1,10 @@
+page{
+  background-color: #f3f3f3;
+}
+.item_box{
+  width: calc(750rpx - 2 * 30rpx);
+  height: calc(500rpx - 2 * 30rpx);
+  background-color: #ffffff;
+  margin-bottom: 20rpx;
+  padding: 30rpx;
+}

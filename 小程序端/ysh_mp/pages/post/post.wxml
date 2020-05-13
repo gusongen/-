@@ -1,0 +1,13 @@
+<view class="title_box">
+    <text>分类选择</text>
+</view>
+<view class="tags_box">
+    <view wx:for="{{tags}}" wx:key="id" class="tag {{item.isSelected?'selected':''}}" bindtap="select_tag" data-id="{{item.id}}">
+        {{item.text}}
+    </view>
+</view>
+
+<!--todo 添加照片-->
+<textarea name="" id="text_box" cols="30" rows="10" placeholder="编辑文案"
+          placeholder-class="place_holder_style"></textarea>
+<button class="post_button" size="default" bindtap="post_item">发布</button>

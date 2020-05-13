@@ -1,0 +1,12 @@
+<view class="item_box">
+    <view class="Ico_Name_date"></view>
+    <view class="tag">拼车</view>
+    <view wx:if="{{false}}"></view>
+    <view class="text_area"></view>
+    <view class="remark_like">
+        <view>评论(1)</view>
+        <view>23</view>
+    </view>
+</view>
+
+

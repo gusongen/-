@@ -20,4 +20,5 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('',include('main.urls')),
     path('api/',include('main.api')),
+    path('remark/',include('remarksys.api')),
 ]

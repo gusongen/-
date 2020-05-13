@@ -3,6 +3,8 @@ from . import views
 
 urlpatterns = [
 
-    #API
-    path("item/",views.item),
+    # API
+    path("item/", views.item),
+    path("pic/", views.image_requester),
+    path("likeitem/", views.like_item),
 ]
